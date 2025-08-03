@@ -1,0 +1,57 @@
+/* Reset & Genel */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',sans-serif; background:#f9f9f9; color:#333; }
+.container { width:90%; max-width:1200px; margin:0 auto; }
+
+/* Navbar */
+.navbar { display:flex; align-items:center; justify-content:space-between; padding:1rem 0; background:#fff; }
+.logo img { height:50px; }
+.menu { list-style:none; display:flex; gap:1.5rem; }
+.menu li a { text-decoration:none; color:#333; font-weight:600; }
+.menu li a.active { color:#7450ff; }
+.mobile-menu-toggle { display:none; cursor:pointer; }
+
+/* Giriş */
+.about-intro { text-align:center; padding:4rem 0 2rem; }
+.about-intro h1 { font-size:2.5rem; color:#7450ff; margin-bottom:1rem; }
+.about-intro p { font-size:1.1rem; color:#555; }
+
+/* Misyon & Vizyon */
+.mission-vision { display:flex; gap:2rem; justify-content:center; margin-bottom:4rem; }
+.mv-item { background:#fff; padding:2rem; border-radius:12px; text-align:center; flex:1; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+.mv-item i { margin-bottom:1rem; color:#7450ff; }
+.mv-item h2 { margin-bottom:.5rem; }
+.mv-item p { color:#666; }
+
+/* Tarihçe */
+.history { margin-bottom:4rem; }
+.history h2 { font-size:2rem; color:#7450ff; margin-bottom:1rem; text-align:center; }
+.timeline { list-style:none; position:relative; padding-left:2rem; }
+.timeline::before { content:''; position:absolute; left:20px; top:0; bottom:0; width:4px; background:#7450ff; }
+.timeline li { position:relative; margin-bottom:2rem; padding-left:2rem; }
+.timeline li .year { position:absolute; left:-2rem; top:0; background:#7450ff; color:#fff; padding:.25rem .5rem; border-radius:4px; font-weight:600; }
+
+/* Ekip */
+.team { margin-bottom:4rem; text-align:center; }
+.team h2 { font-size:2rem; color:#7450ff; margin-bottom:2rem; }
+.team-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; }
+.member { background:#fff; padding:1.5rem; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+.member img { width:100%; border-radius:50%; margin-bottom:1rem; }
+.member h5 { margin-bottom:.5rem; }
+.member p { color:#666; }
+
+/* Değerler */
+.values { margin-bottom:4rem; text-align:center; }
+.values h2 { font-size:2rem; color:#7450ff; margin-bottom:2rem; }
+.values-grid { display:flex; justify-content:center; gap:3rem; flex-wrap:wrap; }
+.value-item { text-align:center; }
+.value-item i { color:#7450ff; margin-bottom:.5rem; }
+.value-item h6 { font-weight:600; }
+
+/* Mobil */
+@media (max-width:768px) {
+  .mission-vision { flex-direction:column; }
+  .mobile-menu-toggle { display:block; }
+  .menu { display:none; flex-direction:column; background:#fff; position:absolute; top:70px; right:0; width:200px; padding:1rem; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+  .menu.mobile-open { display:flex; }
+}

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+   background-image: url("img/arkaplan.jpg"); /* Resmin yolu */
+  background-size: cover; /* Ekranı tamamen kaplaması için */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.navbar .logo img {
+  height: 100px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.menu .mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hero Bölümü */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero-text hr {
+  width: 50px;
+  height: 4px;
+  background-color: #7450ff;
+  border: none;
+  margin: 1rem 0;
+}
+
+.hero-text .desc {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #7450ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5c3dcc;
+}
+
+/* Kartlar */
+.hero-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-head {
+  padding: 1rem;
+}
+
+.card-head h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-head p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.card-footer {
+  padding: 1rem;
+  text-align: right;
+}
+
+.card-footer .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+  .menu li {
+    margin-bottom: 1rem;
+  }
+  .menu .mobile-menu-toggle {
+    display: block;
+  }
+  .menu.mobile-open {
+    display: flex;
+  }
+}

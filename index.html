@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabalar Web Sitesi</title>
+<link rel="stylesheet" type="text/css" href="stil.css">
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pEgS2xg8saV6Y4Pj8xD6xO2v0F0X2kG+cbt3jQJPHvBdosjDd6B7xKdmX8n8wE/cX1voh8+45b5nU3m3Og1rGw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar container">
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </a>
+  </header>
+
+  <main class="container">
+    <section class="hero row">
+      <div class="col hero-text">
+        <h1>
+          ARABALAR <br>
+          WEB SİTESİ
+        </h1>
+        <hr>
+      </div>
+      <div class="col hero-cards">
+        <div class="card" id="card-1">
+          <div class="card-head">
+            <h5>SUV</h5>
+            <p>Bütün Suv Modellerimiz Burada</p>
+          </div>
+          <div class="card-footer">
+            <a href="indexsuv.html" class="btn">Detaylar</a>
+          </div>
+        </div>
+        <div class="card" id="card-2">
+          <div class="card-head">
+            <h5>SEDAN</h5>
+            <p>Bütün Sedan Modellerimiz Burada</p>
+          </div>
+          <div class="card-footer">
+            <a href="indexsedan.html" class="btn">Detaylar</a>
+          </div>
+        </div>
+        <div class="card" id="card-3">
+          <div class="card-head">
+            <h5>COUPE</h5>
+            <p>Bütün Coupe Modellerimiz Burada</p>
+          </div>
+          <div class="card-footer">
+            <a href="indexcoupe.html" class="btn">Detaylar</a>
+          </div>
+        </div>
+        <div class="card" id="card-4">
+          <div class="card-head">
+            <h5>PANELVAN</h5>
+            <p>Bütün Panelvan Modellerimiz Burada</p>
+          </div>
+          <div class="card-footer">
+            <a href="indexpanelvan.html" class="btn">Detaylar</a>
+          </div>
+        </div>
+        <div class="card" id="card-4">
+          <div class="card-head">
+            <h5>HAKKIMIZDA</h5>
+            <p>Bizimle ilgili Rüm bilgiler Burada</p>
+          </div>
+          <div class="card-footer">
+            <a href="indexhakkımızda.html" class="btn">Detaylar</a>
+          </div>
+        </div>
+        <div class="card" id="card-4">
+          <div class="card-head">
+            <h5>İLETİŞİM</h5>
+            <p>Bizimle İletişime Geçin</p>
+          </div>
+          <div class="card-footer">
+            <a href="indexiletişim.html" class="btn">Detaylar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script>
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const menu = document.querySelector('.menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('mobile-open');
+  });
+</script>
+</body>
+</html>

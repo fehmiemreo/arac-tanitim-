@@ -1,0 +1,92 @@
+/* models.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo img {
+  height: 100px; 
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #7450ff;
+  font-weight: 600;
+}
+
+.models-grid h1 {
+  text-align: center;
+  color: #7450ff;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: .75rem;
+}
+
+.card h5 {
+  margin-bottom: .5rem;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: .9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #7450ff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.btn:hover {
+  opacity: .8;
+}

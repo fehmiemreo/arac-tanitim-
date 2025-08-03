@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkımızda</title>
+
+  <!-- Font Awesome ve stil -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="stilhakkımızda.css" />
+</head>
+<body>
+
+  <header class="navbar container">
+    <a href="anasayfa.html" class="logo"><img src="img/logo.png" alt="Logo" /></a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">ANASAYFA</a></li>
+        <li class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container about">
+
+    <!-- Başlık ve giriş -->
+    <section class="about-intro">
+      <h1>Hakkımızda</h1>
+      <p>
+        2023’ten beri otomotiv dünyasına dair en güncel içerikleri sunan, güvenilir
+        ve tarafsız bir platformuz. Tutkumuz; teknoloji, tasarım ve sürdürülebilirliği
+        bir araya getirerek size en iyiyi ulaştırmak.
+      </p>
+    </section>
+
+    <!-- Misyon & Vizyon -->
+    <section class="mission-vision">
+      <div class="mv-item">
+        <i class="fa-solid fa-bullseye fa-2x"></i>
+        <h2>Misyonumuz</h2>
+        <p>
+          Ziyaretçilerimize doğru, şeffaf ve detaylı otomobil bilgisi sunarak
+          en doğru kararı vermelerine yardımcı olmak.
+        </p>
+      </div>
+      <div class="mv-item">
+        <i class="fa-solid fa-eye fa-2x"></i>
+        <h2>Vizyonumuz</h2>
+        <p>
+          Türkiye’nin lider otomotiv içerik platformu olarak sürdürülebilir ve
+          yenilikçi çözümler geliştirmek.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tarihçe -->
+    <section class="history">
+      <h2>Şirket Tarihçesi</h2>
+      <ul class="timeline">
+        <li>
+          <span class="year">2023</span>
+          <p>Kuruluşumuz ve ilk içerik yayını.</p>
+        </li>
+        <li>
+          <span class="year">2024</span>
+          <p>500+ araç incelemesi ve 100K aylık ziyaretçi hedefi.</p>
+        </li>
+        <li>
+          <span class="year">2025</span>
+          <p>Test sürüşü hizmeti ve dijital danışmanlık ekibi kuruldu.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Ekip -->
+    <section class="team">
+      <h2>Ekibimiz</h2>
+      <div class="team-grid">
+        <div class="member">
+          <img src="ekip1.jpg" alt="Ekip Üyesi 1" />
+          <h5>EMİR ŞAHİN</h5>
+          <p>Kurucu & CEO</p>
+        </div>
+        <div class="member">
+          <img src="ekip2.jpg" alt="Ekip Üyesi 2" />
+          <h5>FEHMİ EMRE ÖZTÜREK</h5>
+          <p>İçerik Yöneticisi</p>
+        </div>
+        <div class="member">
+          <img src="ekip3.jpg" alt="Ekip Üyesi 3" />
+          <h5>HÜSEYİN YILMAZ</h5>
+          <p>Teknik Danışman</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Değerler -->
+    <section class="values">
+      <h2>Değerlerimiz</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <i class="fa-solid fa-shield-halved fa-2x"></i>
+          <h6>Güvenilirlik</h6>
+        </div>
+        <div class="value-item">
+          <i class="fa-solid fa-lightbulb fa-2x"></i>
+          <h6>Yenilikçilik</h6>
+        </div>
+        <div class="value-item">
+          <i class="fa-solid fa-leaf fa-2x"></i>
+          <h6>Sürdürülebilirlik</h6>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; 2025 Arabalar Web Sitesi. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('mobile-open');
+    });
+  </script>
+</body>
+</html>
